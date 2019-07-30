@@ -26,4 +26,19 @@ public class RadioTest {
     public void canGetPowerOn() {
         assertEquals(false, radio.isPowerOn());
     }
+
+    @Test
+    public void canTurnPowerOn() {
+        radio.turnOn();
+        assertEquals(true, radio.isPowerOn());
+    }
+
+    @Test
+    public void canTurnPowerOff() {
+        radio.turnOn();
+        assertEquals(true, radio.isPowerOn());
+        radio.turnOff();
+        assertEquals(false, radio.isPowerOn());
+    }
+
 }

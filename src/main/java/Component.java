@@ -20,4 +20,12 @@ public abstract class Component  {
     public boolean isPowerOn() {
         return powerOn;
     }
+
+    public void turnOn() {
+        this.powerOn = true;
+    }
+
+    public void turnOff() {
+        this.powerOn = false;
+    }
 }
