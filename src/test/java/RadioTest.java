@@ -41,4 +41,8 @@ public class RadioTest {
         assertEquals(false, radio.isPowerOn());
     }
 
+    @Test
+    public void canTuneRadio() {
+        assertEquals("6Music", radio.tune("6Music"));
+    }
 }
