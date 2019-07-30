@@ -32,6 +32,21 @@ public class StereoTest {
     }
 
     @Test
+    public void stereoCanPauseCD() {
+        assertEquals("CD is paused", stereo.pauseCD());
+    }
+
+    @Test
+    public void stereoCanSkipSongCD() {
+        assertEquals("Next song playing", stereo.skipSongCD());
+    }
+
+    @Test
+    public void stereoCanGoBackSongCD() {
+        assertEquals("Previous song playing", stereo.goBackSongCD());
+    }
+
+    @Test
     public void stereoCanTuneRadio() {
         assertEquals("Radio4", stereo.tuneRadio());
     }

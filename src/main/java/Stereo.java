@@ -25,6 +25,18 @@ public class Stereo {
         return cdPlayer.play();
     }
 
+    public String pauseCD() {
+        return cdPlayer.pause();
+    }
+
+    public String skipSongCD() {
+        return cdPlayer.next();
+    }
+
+    public String goBackSongCD() {
+        return cdPlayer.back();
+    }
+
     public String tuneRadio() {
         return radio.tune("Radio4");
     }
