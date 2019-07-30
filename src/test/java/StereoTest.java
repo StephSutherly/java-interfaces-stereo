@@ -13,7 +13,7 @@ public class StereoTest {
     public void before() {
         cdPlayer = new CDPlayer("Sony", "CD-100", 4);
         radio = new Radio("Samsung", "RD-200");
-        stereo = new Stereo("Mike's Stereo", cdPlayer, radio);
+        stereo = new Stereo("Ericsson", cdPlayer, radio);
     }
 
     @Test
@@ -34,5 +34,15 @@ public class StereoTest {
     @Test
     public void stereoCanTuneRadio() {
         assertEquals("Radio4", stereo.tuneRadio());
+    }
+
+    @Test
+    public void canIncreaseVolume() {
+        assertEquals("I am LOUDER", stereo.increaseVolume());
+    }
+
+    @Test
+    public void canDecreaseVolume() {
+        assertEquals("I am quieter shhh", stereo.decreaseVolume());
     }
 }

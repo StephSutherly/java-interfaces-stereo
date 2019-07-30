@@ -14,12 +14,12 @@ public class MP3PlayerTest {
     public void before() {
         cdPlayer = new CDPlayer("Sony", "CD-100", 4);
         radio = new Radio("Samsung", "RD-200");
-        stereo = new Stereo("Mike's Stereo", cdPlayer, radio);
+        stereo = new Stereo("Ericsson", cdPlayer, radio);
         mp3Player = new MP3Player("Apple", "IPOD");
     }
 
     @Test
     public void mp3CanConnectToStereo() {
-        assertEquals("I am connected to Mike's Stereo", mp3Player.connect(stereo));
+        assertEquals("I am connected to Ericsson", mp3Player.connect(stereo));
     }
 }

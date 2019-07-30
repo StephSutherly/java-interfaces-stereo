@@ -28,4 +28,12 @@ public class Stereo {
     public String tuneRadio() {
         return radio.tune("Radio4");
     }
+
+    public String increaseVolume() {
+        return "I am LOUDER";
+    }
+
+    public String decreaseVolume() {
+        return "I am quieter shhh";
+    }
 }
