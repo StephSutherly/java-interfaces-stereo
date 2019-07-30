@@ -20,4 +20,12 @@ public class Stereo {
     public Radio getRadio() {
         return radio;
     }
+
+    public String playCD() {
+        return cdPlayer.play();
+    }
+
+    public String tuneRadio() {
+        return radio.tune("Radio4");
+    }
 }

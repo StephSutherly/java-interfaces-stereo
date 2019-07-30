@@ -25,4 +25,14 @@ public class StereoTest {
     public void stereoHasRadio() {
         assertEquals(radio, stereo.getRadio());
     }
+
+    @Test
+    public void stereoCanPlayCD() {
+        assertEquals("CD is playing", stereo.playCD());
+    }
+
+    @Test
+    public void stereoCanTuneRadio() {
+        assertEquals("Radio4", stereo.tuneRadio());
+    }
 }
